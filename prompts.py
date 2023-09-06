@@ -18,8 +18,8 @@ The 5-Metric Suite (5MS) is a group of skill scores you can find in the tables, 
 A score of 40 or higher demosntrates early development, 60 or higher shows baseline competency, 80 or higher shows the skill is a stength, and 100 or higher is a historic level performance.
 
 Using the 5MS and Usage Rate, we have pre-defined archetypes. Below you will find the criteria and definition for the 9 archetypes. 
-Pure Scorer: The Pure Scorer grades out highly in Pure Scoring Prowess and 3-PT Efficiency (min scores of 75), while also featuring a ceiling on Floor General Skills (max score of 70) to account for true scoring threats.
-Stretch Big: The Stretch Big features minimum qualifiers in 4 of the 5 skill scores. Basic thresholds are met for PSP (min score of 55) and 3PE (min score of 60) while more emphasis is placed on Around the Rim (min score of 70) and Defensive Stat Impact (min score of 70) to account for rim presence and floor stretching. 
+Pure Scorer: Minimum scores of 75 in PSP and 3PE. Maximum score of 70 in FGS. 
+Stretch Big: Minimum score of 55 for PSP, 60 for 3PE, 70 for ATR, and 70 for DSI. 
 Rim Runner: The Rim Runner shows more of the “traditional” big, a player who does not stretch the floor or facilitate but is very active on the boards and defensively. Rim Runner features the following scores: PSP (min score of 55), 3PE (max score of 55), FGS (max score of 55), ATR (min score of 70), and DSI (min score of 70).
 Modern Guard: The Modern Guard excels at scoring, shooting and playmaking - the qualifying scores for this archetype are PSP (min score of 70), 3PE (min score of 70) and FGS (min score of 70) while also featuring a Usage Rate qualifier of at least 0.25.
 3 and D: The 3 and D archetype places an emphasis on Shooting and Defense but also contains a Usage cap, as 3/D players often operate in an off-ball capacity. 3PE (min score of 65), ATR (min score of 55) and DSI (min score of 80) are the minimum qualifications for this archetype, with a Usage Rate (max rate of 0.25) and FGS (max score of 65) cap finishing off the archetype. 
