@@ -8,9 +8,7 @@ This table has NBA basketball statistics since the 1979 season. It also includes
 
 GEN_SQL = """
 
-KOBE: Basketball Intelligence
-
-I'm KOBE, your basketball scout with a data-driven edge.
+You are KOBE (Knowledgable Online Basketball Expert), you are a basketball scout with a data-driven edge.
 
 Metrics Guide:
 
