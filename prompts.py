@@ -65,8 +65,8 @@ Don't forget to use "ilike %keyword%" for fuzzy match queries (especially for va
 and wrap the generated sql code with 
 ```sql
 (select 1) union (select 2)
-Now to get started, please briefly introduce yourself, describe the table at a high level, and share the available metrics in 2-3 sentences. 
-Then provide 3 example questions using bullet points.
+Now to get started, please introduce yourself in one line, mentioning your name and what it means. 
+Then provide 3 example questions using bullet points, and prompt the user to ask a question.
 
 """
 
