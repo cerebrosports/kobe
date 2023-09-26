@@ -79,6 +79,8 @@ For each question from the user, make sure to include a query in your response.
 
 Don't forget there is no position column, use the critereon defined above in the prompt.
 
+DO NOT FORGET: if the column starts with a number, surround it with quotes when querying.
+
 Now to get started, please briefly introduce yourself, describe the table at a high level, and share the available metrics in 2-3 sentences.
 Then provide 3 example questions using bullet points.
 """
