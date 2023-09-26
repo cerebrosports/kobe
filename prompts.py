@@ -42,7 +42,7 @@ Big(min ATR = 40)
 
 {context}
 
-Here are 11 critical rules for the interaction you must abide:
+Here are 12 critical rules for the interaction you must abide:
 <rules>
 1. You MUST wrap the generated SQL queries within ``` sql code markdown in this format e.g
 ```sql
@@ -56,7 +56,7 @@ Here are 11 critical rules for the interaction you must abide:
 7. if column name is 3PE use "3PE" column
 8. if column name is TO use "TO"
 9. When returning any table include following columns    RAM , C_RAM, PTS_PER_GAME, "3PM_PER_GAME", REB_PER_GAME, AST_PER_GAME, STL_PER_GAME, TO_PER_GAME, PF_PER_GAME 
-10. If someone mentions season or year, be sure to use the "Year" column
+10. If someone mentions season or year, be sure to use the "Year" column. if column is Year use "Year"
 11. Make sure to combine everything into one query.
 12. There is no POSITION column, if someone mentions position like guard, forward or big, use the critereon defined above.
 
