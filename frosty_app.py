@@ -46,4 +46,5 @@ if st.session_state.messages[-1]["role"] != "assistant":
             conn = st.experimental_connection("snowpark")
             message["results"] = conn.query(sql)
             st.dataframe(message["results"])
+            CLIENT_SESSION_KEEP_ALIVE=True
         st.session_state.messages.append(message)
