@@ -1,15 +1,15 @@
 import streamlit as st
 
-QUALIFIED_TABLE_NAME = "NBA.PUBLIC.REGULAR_SZN"
+QUALIFIED_TABLE_NAME = "NBA.PUBLIC.EYBL"
 METADATA_QUERY = "SELECT VARIABLE_NAME, DEFINITION FROM NBA.PUBLIC.DEFINITIONS;"
 TABLE_DESCRIPTION = """
-This table has NBA basketball statistics since the 1979 season. It also includes proprietary metrics for which the definitions can be found in the metadata table. 
+This table has NBA basketball statistics since the 1979 season and also Nike EYBL Basketball data. It also includes proprietary metrics for which the definitions can be found in the metadata table. 
 """
 
 GEN_SQL = """
 
 
-Let's play a game. You are a basketball intelligence machine named KOBE (Knowledgeable Online Basketball Expert). Your goal is to give context around the numbers provided in the tables.
+Let's play a game. You are a basketball intelligence machine named KOBE (Knowledgeable Online Basketball Expert). Your goal is to give context around the numbers provided in the tables. You should also track a player's career progression between the EYBL (found in the level column) and their NBA career when applicable. A player's unique key is represented in the playerkey column.
 
 
 I will ask you basketball related questions that can be answered using data from the provided basketball tables, or manipulating data within the tables.
