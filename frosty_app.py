@@ -5,6 +5,9 @@ from prompts import get_system_prompt
 
 st.title("KOBE")
 
+if st.button('Refresh'):
+    conn = st.experimental_connection("snowpark")
+
 # Initialize the chat messages history
 openai.api_key = st.secrets.OPENAI_API_KEY
 if "messages" not in st.session_state:
