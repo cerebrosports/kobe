@@ -5,12 +5,8 @@ from prompts import get_system_prompt
 
 st.title("KOBE")
 
-if st.button('Refresh'):
-   conn = st.experimental_connection("snowpark")
-   openai.api_key = st.secrets.OPENAI_API_KEY
-
-   
 # Initialize the chat messages history
+openai.api_key = st.secrets.OPENAI_API_KEY
 if "messages" not in st.session_state:
     # system prompt includes table information, rules, and prompts the LLM to produce
     # a welcome message to the user.
@@ -35,7 +31,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
         response = ""
         resp_container = st.empty()
         for delta in openai.ChatCompletion.create(
-            model="gpt-4-turbo",
+            model="gpt-4",
             messages=[{"role": m["role"], "content": m["content"]} for m in st.session_state.messages],
             stream=True,
         ):
