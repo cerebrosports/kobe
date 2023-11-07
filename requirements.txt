@@ -38,7 +38,7 @@ multidict
 munkres==1.1.4
 numexpr 
 numpy 
-openai==v1.0.1
+openai==v0.28.1
 openpyxl==3.0.10
 oscrypto
 packaging 
