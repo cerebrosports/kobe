@@ -8,6 +8,8 @@ import plotly
 st.title("KOBE v2")
 
 openai.api_key = st.secrets.OPENAI_API_KEY
+conn = st.experimental_connection("snowpark")
+
 
 if "login" not in st.session_state:
     st.session_state.login = ""
@@ -15,8 +17,10 @@ password = ""
 if st.session_state.login == "":
     st.session_state.login = st.text_input("Enter Password", type = 'password')
 
+
 if st.session_state.login == "password":
     # Initialize the chat messages history
+    conn.reset()
     openai.api_key = st.secrets.OPENAI_API_KEY
     if "messages" not in st.session_state:
         # system prompt includes table information, rules, and prompts the LLM to produce
@@ -55,7 +59,6 @@ if st.session_state.login == "password":
             sql_match = re.search(r"```sql\n(.*)\n```", response, re.DOTALL)
             if sql_match:
                 sql = sql_match.group(1)
-                conn = st.experimental_connection("snowpark")
                 message["results"] = conn.query(sql)
                 st.dataframe(message["results"])
             st.session_state.messages.append(message)
