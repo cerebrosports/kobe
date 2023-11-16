@@ -1,7 +1,7 @@
 import openai
 import re
 import streamlit as st
-from prompts import get_system_prompt
+from prompts2 import get_system_prompt
 import os
 import plotly
 
