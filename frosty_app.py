@@ -17,7 +17,7 @@ password = ""
 if st.session_state.login == "":
     st.session_state.login = st.text_input("Enter Password", type = 'password')
 
-
+conn.reset()
 if st.session_state.login == "password":
     # Initialize the chat messages history
     conn.reset()
