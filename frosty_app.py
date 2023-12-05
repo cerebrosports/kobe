@@ -8,7 +8,7 @@ import plotly
 st.title("KOBE v2")
 
 openai.api_key = st.secrets.OPENAI_API_KEY
-conn = st.experimental_connection("snowpark")
+conn = st.connection("snowpark")
 
 
 if "login" not in st.session_state:
