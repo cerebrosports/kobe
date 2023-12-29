@@ -6,9 +6,10 @@ import os
 import plotly
 
 st.title("KOBE v2")
-
+conn = st.experimental_connection("snowpark")
 openai.api_key = st.secrets.OPENAI_API_KEY
-
+if st.button("Refresh"):
+    conn.reset()
 
 
 if "login" not in st.session_state:
@@ -19,7 +20,6 @@ if st.session_state.login == "":
 
 if st.session_state.login == "password":
     # Initialize the chat messages history
-    conn = st.experimental_connection("snowpark")
     conn.reset()
     openai.api_key = st.secrets.OPENAI_API_KEY
     if "messages" not in st.session_state:
